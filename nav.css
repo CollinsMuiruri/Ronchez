@@ -1,0 +1,55 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+nav .logo {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav span {
+    color: yellow;
+}
+
+nav .pages {
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    color: white;
+}
+
+nav .pages li a {
+    text-decoration: none;
+    color: yellow;
+}
+
+nav .pages li .orange {
+    text-decoration: none;
+    color: white;
+}
+
+nav .pages li i {
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+nav .account {
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+}
+
+nav .account #log-in,
+#button {
+    padding-left: 50px;
+    cursor: pointer;
+}

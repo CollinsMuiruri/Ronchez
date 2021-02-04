@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('./fonts/ElephantFont/Elephant-Outline.otf');
+body {
+    background-color: black;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+header {
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.left {
+    font-size: 25px;
+    line-height: 56.1px;
+    max-width: 500px;
+}
+
+.left h1 {
+    font-weight: 1200;
+    letter-spacing: -1.122px;
+    text-align: left;
+}
+
+.left h1 span {
+    color: yellow;
+}
+
+.left p {
+    line-height: 36px;
+}
+
+.left input {}
+
+.right {
+    margin-right: 50px;
+}
+
+.right img {
+    max-height: 450px;
+    /* max-height: 10px; */
+}
+
+a#nav-button {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 2px;
+    background: orange;
+    text-decoration: none;
+}
+
+a#mail-button {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    background: orange;
+    text-decoration: none;
+}
+
+input {
+    font-size: 17px;
+    width: 65%;
+    /* height: 22px; */
+    border: 1px solid #EBEBEB;
+    border-radius: 2px;
+    margin: 0;
+    padding: 16.5px 18px;
+    vertical-align: middle;
+}
+
+.newsletter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.back {
+    position: relative;
+}
+
+.back:after {
+    font-family: "elephantoutline";
+    content: "Ronchez";
+    position: absolute;
+    font-size: 300px;
+    z-index: -1;
+    top: -100px;
+    padding: -300px;
+    margin: -100px;
+    margin-top: -100px;
+    margin-left: -300px;
+    color: rgba(128, 128, 128, 0.158);
+    overflow: hidden;
+}
+
+.front {
+    position: relative;
+}
+
+.front:after {
+    font-family: "elephantoutline";
+    content: "Fitness";
+    position: absolute;
+    font-size: 300px;
+    z-index: -1;
+    top: 300px;
+    margin-left: 600px;
+    color: rgba(128, 128, 128, 0.227);
+    overflow: hidden;
+}
