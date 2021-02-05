@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('./fonts/ElephantFont/Elephant-Outline.otf');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght400&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+header {
+    background: url(https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1750&q=80);
+    background-color: #cccccc;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+
+header .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+
+/* codepen code for sticky sidebar  */
+
+:root {
+    --space: 2rem;
+    --space-xs: calc(var(--space) / 3);
+    --space-sm: calc(var(--space) / 2);
+    --space-md: calc(var(--space) * 2);
+    --color-primary: lightgray;
+    --color-accent: whitesmoke;
+    --color-dark: black;
+    --color-mid: gray;
+    --color-light: white;
+    --color-highlight: dodgerblue;
+    --radius: 0.125rem;
+}
+
+
+/* Here are the base styles for the main layout and sticky component */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article {
+    flex-basis: 0;
+    flex-grow: 999;
+    max-width: 80%;
+    margin-left: 2rem;
+}
+
+.sidebar {
+    --offset: var(--space);
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-self: start;
+    position: sticky;
+    top: var(--offset);
+    margin-right: 2rem;
+}
+
+.component {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.component .content {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.sidebar .component {
+    max-height: calc(100vh - var(--offset) * 2);
+}
+
+
+/* Until flexbox gap is supported in all modern browsers, we use the negative margin trick to create space between the children elements */
+
+.component {
+    position: relative;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.03), 0 8px 16px rgba(0, 0, 0, 0.03), 0 16px 32px rgba(0, 0, 0, 0.02), 0 32px 64px rgba(0, 0, 0, 0.02);
+}
+
+footer {
+    background: url(https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1750&q=80);
+    background-color: #cccccc;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 80%;
+    /* background-color: white; */
+    color: white;
+    border-radius: 8px;
+    border: 1px solid grey;
+    margin: 30px 10px;
+}
+
+.card .card-image {
+    width: 700px;
+    height: 350px;
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.card-text {
+    margin-left: 20px;
+}
+
+.card-text .meta {
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card-text .meta .date {
+    padding-left: 1rem;
+    color: yellow;
+}
+
+.card-text .title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.card-text .content {
+    line-height: 2.5rem;
+    color: grey;
+    max-width: 95%;
+    font-size: 17px;
+}
+
+.card-text .content .continue-reading {
+    color: darkorange;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.card-text .content .continue-reading:hover {
+    color: yellow;
+    transition: .5s;
+    cursor: pointer;
+}

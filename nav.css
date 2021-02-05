@@ -14,6 +14,8 @@ nav .logo {
     font-size: 30px;
     cursor: pointer;
     padding: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 nav span {
@@ -52,4 +54,14 @@ nav .account #log-in,
 #button {
     padding-left: 50px;
     cursor: pointer;
+}
+
+a#nav-button {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 2px;
+    background: orange;
+    text-decoration: none;
 }
