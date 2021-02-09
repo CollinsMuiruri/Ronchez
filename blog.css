@@ -70,7 +70,7 @@ main {
     align-self: start;
     position: sticky;
     top: var(--offset);
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .component {
@@ -171,4 +171,60 @@ footer {
     color: yellow;
     transition: .5s;
     cursor: pointer;
+}
+
+.sidebar .component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar .component img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 10px;
+}
+
+.sidebar .component .header {
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.sidebar .component .content {
+    margin-bottom: 5px;
+}
+
+.sidebar .component .footer .button {
+    background: orange;
+    border: 1px solid orange;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.sidebar .component .footer .button:hover {
+    transition: .5s;
+    background: transparent;
+    color: white;
+}
+
+.sidebar .component .footer .empty-cart {
+    background: transparent;
+    margin-left: 10px;
+    color: white;
+}
+
+.sidebar .component .footer .empty-cart:hover {
+    transition: .5s;
+    background: orange;
+    color: black;
+}
+
+a {
+    text-decoration: none;
 }

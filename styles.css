@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 @import url('./fonts/ElephantFont/Elephant-Outline.otf');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#wrapper {
+    width: 1600px;
+    margin: auto;
+}
+
 body {
     background-color: black;
     font-family: 'Noto Sans', sans-serif;
     color: white;
     box-sizing: border-box;
+    max-width: 1600px;
+    margin: auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -15,6 +29,7 @@ header {
     vertical-align: middle;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 50px;
 }
 
 .left {
@@ -25,8 +40,9 @@ header {
 
 .left h1 {
     font-weight: 1200;
-    letter-spacing: -1.122px;
     text-align: left;
+    margin-bottom: 3rem;
+    line-height: 1.1;
 }
 
 .left h1 span {
@@ -34,7 +50,8 @@ header {
 }
 
 .left p {
-    line-height: 36px;
+    line-height: 1.5;
+    margin-bottom: 3rem;
 }
 
 .right {
@@ -43,7 +60,6 @@ header {
 
 .right img {
     max-height: 450px;
-    /* max-height: 10px; */
 }
 
 a#nav-button {
@@ -100,10 +116,30 @@ input {
     top: -100px;
     padding: -300px;
     margin: -100px;
-    margin-top: -100px;
-    margin-left: -300px;
+    margin-top: -90px;
+    margin-left: -200px;
     color: rgba(128, 128, 128, 0.158);
-    overflow: hidden;
+    overflow-y: hidden;
+    animation: ronchez 25s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ronchez {
+    0% {
+        left: 0%;
+    }
+    25% {
+        left: 25%;
+    }
+    50% {
+        left: 50%;
+    }
+    75% {
+        left: 75%;
+    }
+    100% {
+        left: 100%;
+    }
 }
 
 .front {
@@ -116,8 +152,29 @@ input {
     position: absolute;
     font-size: 300px;
     z-index: -1;
-    top: 300px;
+    padding-top: 300px;
     margin-left: 600px;
     color: rgba(128, 128, 128, 0.227);
-    overflow: hidden;
+    overflow-y: hidden;
+    margin-top: 30px;
+    animation: fitness 25s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fitness {
+    0% {
+        right: 0%;
+    }
+    25% {
+        right: 25%;
+    }
+    50% {
+        right: 50%;
+    }
+    75% {
+        right: 75%;
+    }
+    100% {
+        right: 100%;
+    }
 }
