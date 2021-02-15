@@ -8,8 +8,6 @@
 
 #wrapper {
     max-width: 1600px;
-    overflow-y: hidden;
-    overflow-x: hidden;
     margin: auto;
 }
 
