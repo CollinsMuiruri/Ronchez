@@ -1,19 +1,13 @@
-let prog = document.getElementById('progress');
+let scrollProgressIndicator = document.getElementsByClassName("scroll-progress-indicator");
+let postContent = document.getElementsByClassName("blog-wrapper");
 
-let body = document.body,
-    html = document.documentElement;
+window.addEventListener("scroll", () => {
+    let scrollAmount = window.scrollY;
+    let postHeight = postContent[0].clientHeight - window.innerHeight + 520;
 
-let height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    let progress = Math.min((scrollAmount / postHeight) * 100, 100);
 
-const setProgress = () => {
-    let scrollFromTop = (document.documentElement.scrollTop || body.scrollTop) + html.clientHeight;
-    let width = scrollFromTop / height * 100 + '%';
+    console.log("Progress: " + progress)
 
-    console.log('scroll', html.clientHeight, body.scrollTop);
-
-    prog.style.width = width;
-}
-
-window.addEventListener('scroll', setProgress);
-
-setProgress();
+    // scrollProgressIndicator[0].style.width = progress + "%"
+});

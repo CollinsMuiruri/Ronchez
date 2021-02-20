@@ -31,13 +31,13 @@ header .text {
     font-weight: bold;
 }
 
-.progress {
+.scroll-progress-indicator {
     background: yellow;
     position: fixed;
     top: 0;
     bottom: auto;
     left: 0;
-    width: 10%;
+    width: 0%;
     height: 5px;
     z-index: 1000;
 }
