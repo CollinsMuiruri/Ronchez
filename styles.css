@@ -32,8 +32,13 @@ header {
     margin-top: 50px;
 }
 
+header img {
+    max-width: 550px;
+    margin-left: 100px;
+}
+
 .left {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 56.1px;
     max-width: 500px;
 }
@@ -85,7 +90,7 @@ a#mail-button {
 
 input {
     font-size: 17px;
-    width: 65%;
+    width: 60%;
     /* height: 22px; */
     border: 1px solid #EBEBEB;
     border-radius: 2px;

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 @import url('./fonts/ElephantFont/Elephant-Outline.otf');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght400&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
 
 header .text {

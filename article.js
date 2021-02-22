@@ -7,7 +7,7 @@ window.addEventListener("scroll", () => {
 
     let progress = Math.min((scrollAmount / postHeight) * 100, 100);
 
-    console.log("Progress: " + progress)
+    // console.log("Progress: " + progress)
 
-    // scrollProgressIndicator[0].style.width = progress + "%"
+    scrollProgressIndicator[0].style.width = progress + "%"
 });

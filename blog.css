@@ -19,7 +19,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 3rem;
+    margin-bottom: 70px;
 }
 
 header .text {
@@ -60,7 +60,7 @@ main {
     flex-basis: 0;
     flex-grow: 999;
     max-width: 80%;
-    margin-left: 2rem;
+    margin-left: 20px;
 }
 
 .sidebar {
@@ -70,7 +70,7 @@ main {
     align-self: start;
     position: sticky;
     top: var(--offset);
-    margin-right: 3rem;
+    margin-right: 30px;
 }
 
 .component {
@@ -97,13 +97,13 @@ main {
 }
 
 footer {
-    background: url(https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1750&q=80);
+    background: url(https://images.unsplash.com/photo-1434682881908-b43d0467b798?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGd5bXxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=1500&q=60);
     background-color: #cccccc;
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 3rem;
+    margin-top: 50px;
 }
 
 .card {
@@ -138,29 +138,29 @@ footer {
 .card-text .meta {
     display: flex;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .card-text .meta .date {
-    padding-left: 1rem;
+    padding-left: 10px;
     color: yellow;
 }
 
 .card-text .title {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 21px;
 }
 
 .card-text .content {
-    line-height: 2.5rem;
+    line-height: 30px;
     color: grey;
     max-width: 95%;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .card-text .content .continue-reading {
     color: darkorange;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: bold;
     padding: 10px;
     border-radius: 2px;
@@ -227,4 +227,27 @@ footer {
 
 a {
     text-decoration: none;
+}
+
+.footer-text {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-text h3 {
+    font-size: 25px;
+}
+
+.footer-text h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-text h3 a span {
+    color: yellow;
+}
+
+.inner-footer-text {
+    margin: 20px;
 }
