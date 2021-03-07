@@ -124,7 +124,8 @@ nav {
     #social {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        padding-left: 40%;
+        /* flex-wrap: wrap; */
     }
     #logins {
         display: flex;
