@@ -4,61 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best dance fitness and zumba for the perfect body.">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="./fonts/ElephantFont/webfontkit-20210204-162325/stylesheet.css">
     <script src="https://use.fontawesome.com/07b0ffd8fa.js"></script>
+
     <title>Ronchez Fitness</title>
 </head>
 
 <body>
     <div id="wrapper">
         <nav>
-            <!-- <img src="./HatchfulExport-All/final_logo_transparent.png" alt="" class="logo"> -->
-            <a href="/" class="logo">Ronchez <span>Fitness</span>.</a>
-            <ul class="pages">
-                <li><a href="https://web.facebook.com/Ronchezfitness"><i class="fa fa-facebook-square"></i></a></li>
-                <li><a class="orange" href="https://twitter.com/ronchezfitness?s=08"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://youtube.com/channel/UCm2YuAW5Hvd57bv503tFmaQ"><i class="fa fa-youtube-play"></i></a></li>
-                <li><a class="orange" href="https://ronchezfitness.com/"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-            <ul class="account">
-                <li>Cart</li>
-                <li id="log-in">Log In</li>
-                <li id="button">
-                    <a href="blog.html" id="nav-button">Go To Blog</a>
-                </li>
-            </ul>
-            <div class="mobile-menu">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="mobile-account">
-                    <li><a href="blog.html">Blogs</a></li>
-                    <li>Cart</li>
-                    <li id="log-in">Log In</li>
-                    <li id="buttone">
-                        <a href="blog.html" id="nav-buttone">Go To Blog</a>
-                    </li>
-
-                    <li><a href="https://web.facebook.com/Ronchezfitness"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                    <li><a class="orange" href="https://twitter.com/ronchezfitness?s=08"><i class="fa fa-twitter"></i> Twitter</a></li>
-                    <li><a href="https://youtube.com/channel/UCm2YuAW5Hvd57bv503tFmaQ"><i class="fa fa-youtube-play"></i> Youtube</a></li>
-                    <li><a class="orange" href="https://ronchezfitness.com/"><i class="fa fa-instagram"></i> Instagram</a></li>
-
+            <div class="logo">
+                <a href="/" class="logo">Ronchez <span>Fitness</span>.</a>
+            </div>
+            <div class="nav-links">
+                <ul id="social">
+                    <li><a class="pages orange" href="https://web.facebook.com/Ronchezfitness"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a class="pages" id="twitter" href="https://twitter.com/ronchezfitness?s=08"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="pages orange" id="youtube" href="https://youtube.com/channel/UCm2YuAW5Hvd57bv503tFmaQ"><i class="fa fa-youtube-play"></i></a></li>
+                    <li><a class="pages" id="instagram" href="https://ronchezfitness.com/"><i class="fa fa-instagram"></i></a></li>
                 </ul>
 
+                <ul id="logins">
+                    <li><a class="nav-text" href="">Blogs</a></li>
+                    <li><a class="nav-text" href="">Cart</a></li>
+                    <li><a class="nav-text" href="">Log In</a></li>
+                    <li id="nav-button">
+                        <a class="nav-text" href="blog.html" id="go-to-blog">Go To Blog</a>
+                    </li>
+                </ul>
             </div>
-            <div id="scroll-progress-indicator" class="scroll-progress-indicator"></div>
-
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
-        <div class="back">
+        <!-- <div class="back">
             <p></p>
         </div>
         <div class="front">
             <p></p>
-        </div>
+        </div> -->
         <header>
             <div class="left">
                 <h1>At Ronchez, we believe <span> change is good </span>for everyone.</h1>
@@ -76,6 +65,9 @@
         </header>
 
     </div>
+
+    <script src="nav.js"></script>
+
 </body>
 
 </html>
