@@ -118,8 +118,6 @@ nav {
     nav {
         max-width: 100%;
         overflow: hidden;
-        position: sticky;
-        position: -webkit-sticky;
     }
     .logo {
         left: 0;
