@@ -13,7 +13,7 @@ body {
     color: white;
     max-width: 1600px;
     margin: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header {
@@ -55,8 +55,11 @@ header .header-text {
 .collections {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 20px;
+    max-width: 90%;
+    margin: auto;
 }
 
 .collections li {
@@ -70,5 +73,137 @@ header .header-text {
     background-size: cover;
     position: relative;
     border-radius: 8px;
-    padding: 80px;
+    padding: 60px;
+    cursor: pointer;
+}
+
+.on-sale {
+    display: flex;
+    justify-content: safe;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: auto;
+}
+
+.on-sale img {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+    padding: auto;
+}
+
+.new-arrivals {
+    display: flex;
+    justify-content: safe;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: auto;
+}
+
+.new-arrivals img {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+    padding: auto;
+}
+
+.conto {
+    display: flex;
+    justify-content: safe;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: auto;
+}
+
+.conto img {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+    padding: auto;
+}
+
+.collection-heading {
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+    font-weight: bold;
+    /* color: black; */
+    height: 100%;
+    width: 20%;
+    background-color: orange;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+    border-bottom-right-radius: 50px;
+    padding: 15px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-card .text-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-cart-button {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 2px;
+    background: orange;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+footer {
+    background: url(https://images.unsplash.com/photo-1434682881908-b43d0467b798?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGd5bXxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=1500&q=60);
+    background-color: #cccccc;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.footer-text {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.footer-text h3 {
+    font-size: 25px;
+}
+
+.footer-text h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-text h3 a span {
+    color: yellow;
+}
+
+.inner-footer-text {
+    margin: 20px;
+}
+
+.inner-footer-text-icons {
+    display: none;
 }
