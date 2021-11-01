@@ -7,70 +7,63 @@ body {
     /* overflow-x: hidden; */
 }
 
-.product{
-    display: flex;
-    margin: 0 5% 0 5%;
-}
-.image-section{
-    display: flex;
-    flex-direction: column;
-    max-width:fit-content;
-}
-#main-image img{
-    max-height: 500px;
-    border-radius: 8px;
-}
-.sub-images{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 100%;
-    margin-top: 15px;
-}
-.sub-images img{
-    max-height: 155px;
-    border-radius: 8px;
-}
-.product-details{
-    margin-left: 50px;
-    line-height: 80px;
-}
-h5{
-    font-size: 28px;
-}
-.product-description{
-    font-size: 18px;
-    line-height: 25px;
-}
-.product-price{
-    font-size: 25px;
-}
-.product-buttons{
+.cart-section{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%;
 }
-#add-to-cart-btn{
-    background-color: transparent;
-    height: 58px;
-    width: 300px;
+.all-cart-products{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}.cart-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+img{
+    max-height: 150px;
+}
+.product-name-and-counter, .product-amounts{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    font-size: 20px;
+}
+.product-name-and-counter{
+    align-items: center;
+}
+.product-amounts{
+    text-align: right;
+}
+
+
+/* floating sidebar */
+.price-calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 2px solid orange;
-    border-radius: 2px;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 17px;
+    padding: 20px;
+    /* height: fit-content; */
+}
+.price-calculator .total-name{
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
 }
-#add-to-cart-btn a{
-    text-decoration: none;
-    color:white;
+.price-calculator .total-price{
+    font-size: 15px;
+    margin-bottom: 20px;
 }
-#add-to-cart-btn:hover{
-    background-color: orange;
-    transition: .5s;
-}
-#buy-now-btn{
+.price-calculator #checkout{
     background-color: darkorange;
     height: 58px;
     width: 300px;
@@ -80,20 +73,21 @@ h5{
     padding: 10px;
     font-size: 17px;
     font-weight: bold;
+    align-self: baseline;
 }
-#buy-now-btn a{
+.price-calculator #checkout a{
     text-decoration: none;
     color:white;
 }
-#buy-now-btn:hover{
+.price-calculator #checkout:hover{
     background-color: orange;
     transition: .5s;
 }
+/* floating sidebar end */
 
 
 
 
-/* Footer Area */
 footer {
     background: url(https://images.unsplash.com/photo-1434682881908-b43d0467b798?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGd5bXxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=1500&q=60);
     background-color: #cccccc;

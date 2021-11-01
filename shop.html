@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="shop-2.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="./fonts/ElephantFont/webfontkit-20210204-162325/stylesheet.css">
     <script src="https://use.fontawesome.com/07b0ffd8fa.js"></script>
@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <!-- This shop template is for the three products only.
+The template with categories and a large products base design is shop-1.html -->
     <nav>
         <div class="logo">
             <a href="/" class="logo">Ronchez <span>Fitness</span>.</a>
@@ -50,114 +52,79 @@
                 </h1>
                 <p>Unisex design
                 </p>
-                <a id="buy-button" href="shop.html" id="go-to-blog">Go To Shop</a>
+                <a id="buy-button" href="shop.html" id="go-to-blog">View Merch.</a>
             </div>
         </div>
     </header>
 
-    <div class="collection-heading">Conto</div>
-    <div class="conto">
+    <div class="collection-heading">Our Merch.</div>
+    <div class="conto" id="three-products">
 
         <div class="product-card">
             <img src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
             <div class="text-and-button">
                 <div class="product-details">
-                    <h5 class="product-name">Primal Zinc</h5>
+                    <h5 class="product-name">The T-shirt</h5>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repellendus, nulla deleniti quos eveniet, fugit laboriosam deserunt consequuntur numquam ab fugiat tempora esse aliquid ad aliquam libero omnis, dolore voluptates!</p>
                     <p class="product-price">$25.00</p>
                 </div>
 
-                <div class="add-to-cart">
-                    <a class="add-to-cart-button" href="shop.html">Add to Cart</a>
-                </div>
+                <div class="buttons">
+                <button id="vm-btn">
+                    <a href="single-product.html">View product</a>
+                </button>
+
+                <button id="adc-btn">
+                    <a href="shop.html">Add to Cart</a>
+                </button>
             </div>
+
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="text-and-button" id="text-left">
+                <div class="product-details">
+                    <h5 class="product-name">The Pants</h5>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repellendus, nulla deleniti quos eveniet, fugit laboriosam deserunt consequuntur numquam ab fugiat tempora esse aliquid ad aliquam libero omnis, dolore voluptates!</p>
+                    <p class="product-price">$25.00</p>
+                </div>
+
+                <div class="buttons">
+                    <button id="vm-btn">
+                        <a href="single-product.html">View product</a>
+                    </button>
+    
+                    <button id="adc-btn">
+                        <a href="shop.html">Add to Cart</a>
+                    </button>
+                </div>
+                
+            </div>
+            <img id="img-right" src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+
         </div>
         <div class="product-card">
             <img src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
             <div class="text-and-button">
                 <div class="product-details">
-                    <h5 class="product-name">Primal Zinc</h5>
+                    <h5 class="product-name">The Bag</h5>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repellendus, nulla deleniti quos eveniet, fugit laboriosam deserunt consequuntur numquam ab fugiat tempora esse aliquid ad aliquam libero omnis, dolore voluptates!</p>
                     <p class="product-price">$25.00</p>
                 </div>
 
-                <div class="add-to-cart">
-                    <a class="add-to-cart-button" href="shop.html">Add to Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="text-and-button">
-                <div class="product-details">
-                    <h5 class="product-name">Primal Zinc</h5>
-                    <p class="product-price">$25.00</p>
-                </div>
+                <div class="buttons">
+                <button id="vm-btn">
+                    <a href="single-product.html">View product</a>
+                </button>
 
-                <div class="add-to-cart">
-                    <a class="add-to-cart-button" href="shop.html">Add to Cart</a>
-                </div>
+                <button id="adc-btn">
+                    <a href="shop.html">Add to Cart</a>
+                </button>
             </div>
-        </div>
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="text-and-button">
-                <div class="product-details">
-                    <h5 class="product-name">Primal Zinc</h5>
-                    <p class="product-price">$25.00</p>
-                </div>
 
-                <div class="add-to-cart">
-                    <a class="add-to-cart-button" href="shop.html">Add to Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="text-and-button">
-                <div class="product-details">
-                    <h5 class="product-name">Primal Zinc</h5>
-                    <p class="product-price">$25.00</p>
-                </div>
-
-                <div class="add-to-cart">
-                    <a class="add-to-cart-button" href="shop.html">Add to Cart</a>
-                </div>
             </div>
         </div>
 
-    </div>
-
-
-    <div class="collection-heading">Collections</div>
-    <div class="collections">
-
-        <li style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1514989771522-458c9b6c035a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWlyJTIwbWF4fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60);">Shoes</li>
-        <li style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8dHNoaXJ0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60);">T·Shirts</li>
-        <li style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1559195690-236f5fab61a9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YmFnJTIwcGFja3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60;)">Bags</li>
-        <li style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8amFja2V0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">Jackets</li>
-        <li style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">Supplements</li>
-    </div>
-
-    <div class="collection-heading">On Sale !!</div>
-
-    <div class="on-sale">
-
-        <img src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1596177583101-26b7dada4f5c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c3VwcGxlbWVudHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-
-    </div>
-
-    <div class="collection-heading">New Arrivals</div>
-
-    <div class="new-arrivals">
-        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8dHNoaXJ0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8dHNoaXJ0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8dHNoaXJ0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8dHNoaXJ0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8dHNoaXJ0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8dHNoaXJ0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=60" alt="">
 
     </div>
 
@@ -180,6 +147,7 @@
             <!-- <p>0712345678</p> -->
         </div>
     </footer>
+    <script src="nav.js"></script>
 </body>
 
 </html>

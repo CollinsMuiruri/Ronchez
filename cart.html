@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="single-product.css">
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="./fonts/ElephantFont/webfontkit-20210204-162325/stylesheet.css">
     <script src="https://use.fontawesome.com/07b0ffd8fa.js"></script>
 
-    <title>The T-Shirt</title>
+    <title>Cart(2)</title>
 </head>
 <body>
     <nav>
@@ -40,44 +40,46 @@
         </div>
     </nav>
 
-    <div class="product">
+    <div class="cart-section">
 
-        <div class="image-section">
-            <div id="main-image">
-                <img src="./IMAGES/RONCHEZ-PROFILE.jpg" alt="" srcset="">
-            </div>
-            <div class="sub-images">
-                <img src="./IMAGES/RONCHEZ-PROFILE.jpg" alt="" srcset="">
-                <img src="./IMAGES/RONCHEZ-PROFILE.jpg" alt="" srcset="">
-                <img src="./IMAGES/RONCHEZ-PROFILE.jpg" alt="" srcset="">
-            </div>
-        </div>
-        <div class="product-details">
-            <h5>The T-Shirt</h5>
-            <p class="product-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, maiores! Expedita error recusandae a debitis quaerat, incidunt id rem nobis quia qui odio officiis quo! Obcaecati omnis explicabo vitae quasi.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae sunt enim, nostrum eos ratione asperiores earum cum obcaecati dolorum facere doloremque placeat omnis, ex suscipit saepe veritatis iste magnam!            
-            </p>
-            <p class="product-price">$25.00<!--<span> in stock span>--></p>
-
-            <div class="product-variants">
-                <option value="">Small</option>
-                <option value="">Medium</option>
-                <option value="">Large</option>
-            </div>
-
-            <div class="product-buttons">
-                <button id="add-to-cart-btn">
-                    <a href="cart.html">ADD TO CART</a>
-                </button>
+        <div class="all-cart-products">
+            <div class="cart-product">
+                <img src="./IMAGES/RONCHEZ-PROFILE.jpg" alt="">
+                    <div class="product-name-and-counter">
+                        <div class="product-name">The T-Shirt</div>
+                        <div class="product-counter">- 1 +</div>
+                    </div>
+                    <div class="product-amounts">
+                        <p class="product-price">Price:<span> $25.00</span></p>
+                        <p class="product-sub-total-price">Sub-total:<span> $25.00</span></p>
+                    </div>
                 
-                <button id="buy-now-btn">
-                    <a href="cart.html">BUY NOW</a>
-                </button>
+                <div id="remove">X:REMOVE</div>
             </div>
+
+            <div class="cart-product">
+                <img src="./IMAGES/RONCHEZ-PROFILE.jpg" alt="">
+                    <div class="product-name-and-counter">
+                        <div class="product-name">The Bag</div>
+                        <div class="product-counter">- 2 +</div>
+                    </div>
+                    <div class="product-amounts">
+                        <p class="product-price">Price:<span> $25.00</span></p>
+                        <p class="product-sub-total-price">Sub-total:<span> $50.00</span></p>
+                    </div>
+                
+                <div id="remove">X:REMOVE</div>
+            </div>
+
         </div>
 
-    
+        <div class="price-calculator">
+            <p class="total-name">CART TOTAL</p>
+            <p class="total-price">$75.00</p>
+
+            <button id="checkout"><a href="checkout.html">PROCEED TO CHECKOUT</a></button>
+        </div>
+
     </div>
 
 

@@ -108,22 +108,9 @@ header .header-text {
     object-fit: cover;
     padding: auto;
 }
-/* #three-products{} */
-
-.conto {
-    display: flex;
-    justify-content: safe;
-    flex-wrap: wrap;
-    max-width: 90%;
-    margin: auto;
-}
-
-.conto img {
-    width: 250px;
-    height: 300px;
-    margin: 20px;
-    object-fit: cover;
-    padding: auto;
+#three-products{
+    margin-left: 10%;    
+    margin-right: 10%;
 }
 
 .collection-heading {
@@ -148,27 +135,91 @@ header .header-text {
 
 .product-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+.product-card img{
+    max-height: 500px;
 }
 
 .product-card .text-and-button {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
+    line-height: 80px;
+    margin-left: 50px;
+}
+.product-card #text-left{
+    margin-left: 50px;
+    margin-right: 0px;
+}
+.product-card #img-right{
+    /* margin-left: 10px; */
+    margin-right: 50px;
 }
 
-.add-to-cart-button {
-    color: white;
+h5{
+    font-size: 28px;
+}
+
+.product-description{
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 70%;
+}
+
+.product-price{
+    font-size: 25px;
+}
+
+.buttons{
+    display: block;
+}
+
+#vm-btn{
+    background-color: transparent;
+    height: 48px;
+    width: 250px;
+    border: 2px solid orange;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 10px;
     font-size: 17px;
     font-weight: bold;
-    padding: 10px;
-    border-radius: 2px;
-    background: orange;
-    text-decoration: none;
-    margin-left: 40px;
+    margin-top: 20px;
 }
+#vm-btn:hover{
+    background-color: orange;
+    transition: .5s;
+}
+
+#vm-btn a{
+    text-decoration: none;
+    color:white;
+}
+#adc-btn{
+    background-color: darkorange;
+    height: 48px;
+    width: 250px;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+#adc-btn:hover{
+    background-color: orange;
+    transition: .5s;
+}
+#adc-btn a{
+    text-decoration: none;
+    color:white;
+}
+
 
 footer {
     background: url(https://images.unsplash.com/photo-1434682881908-b43d0467b798?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGd5bXxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=1500&q=60);
